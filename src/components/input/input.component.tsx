@@ -20,7 +20,7 @@ export const Input = ({ label, ...props }: Props) => {
   };
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (event.target.value.length < 6) {
+    if (event.target.value.length < 6 && event.target.value.length > 0) {
       setHasError(true);
     } else {
       setHasError(false);
@@ -39,9 +39,7 @@ export const Input = ({ label, ...props }: Props) => {
         className={`${isFocused ? 'focused' : ''} ${hasError ? 'error' : ''}`}
       />
       {hasError && (
-        <div style={{ color: 'red', textAlign: 'left' }}>
-          Error Test: Please enter at least 6 characters
-        </div>
+        <div className={'error-text'}>Error Test: Please enter at least 6 characters</div>
       )}
     </div>
   );

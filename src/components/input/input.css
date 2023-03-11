@@ -6,37 +6,42 @@ Accent2:        #201411
 White:          #E5E2E8
 Secondary Text: #212121
 */
-
 input {
-    display: block;
-    width: 300px;
-    height: 40px;
-  }
-
+  display: block;
+  font: 1em sans-serif;
+  width: 300px;
+  height: 40px;
+  border-radius: 2px;
+}
 input.focused {
-    border: 2px solid #c084e9;
-    border-radius: 4px;
-    box-shadow: 0px 0px 0px 5px #e8ccfb;
-    outline: none;
+  border: 2px solid #C084E9;
+  border-radius: 2px;
+  box-shadow: 0 0 0 5px #e8ccfb;
+  outline: none;
 }
-
 input.error {
-    border: 2px solid #f4551e;
-    border-radius: 4px;
-    box-shadow: 0px 0px 0px 5px #fac6c6;
-    outline: none;
+  border: 2px solid #f41e1e;
+  border-radius: 2px;
+  box-shadow: 0 0 0 5px #fac6c6;
+  outline: none;
 }
 
-error-text {
-    display: inline;
-    color: "red";
-    text-align: "left";
+.error-text {
+  display: block;
+  font: 1em sans-serif;
+  width: 300px;
+  height: 24px;
+  text-align: left;
+  margin-bottom: 10px;
+  color: red;
 }
 
 label {
-    display: block;
-    width: 300px;
-    height: 24px;
-    text-align: left;
-    margin-bottom: 10px;
+  display: block;
+  font: 1em sans-serif;
+  width: 300px;
+  height: 24px;
+  text-align: left;
+  margin-bottom: 10px;
 }
+/*# sourceMappingURL=input.css.map */

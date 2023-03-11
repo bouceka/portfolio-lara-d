@@ -1,0 +1,59 @@
+/*
+Primary:        #F4551E
+Secondary:      #C084E9
+Accent1:        #F99106
+Accent2:        #201411
+White:          #E5E2E8
+Secondary Text: #212121
+*/
+
+$primary: #F4551E;
+$secondary: #C084E9;
+$error: #f41e1e;
+$focused-shadow: #e8ccfb;
+$error-shadow: #fac6c6;
+$width: 300px;
+
+$font: 1em sans-serif;
+
+@mixin border($color, $shadow) {
+  border: 2px solid $color;
+  border-radius: 2px;
+  box-shadow: 0 0 0 5px $shadow;
+  outline: none;
+}
+
+input {
+  display: block;
+  font: $font;
+  width: $width;
+  height: 40px;
+  border-radius: 2px;
+
+  &.focused {
+    @include border($secondary, $focused-shadow);
+  }
+
+  &.error {
+    @include border($error, $error-shadow);
+  }
+}
+
+.error-text {
+  display: block;
+  font: $font;
+  width: $width;
+  height: 24px;
+  text-align: left;
+  margin-bottom: 10px;
+  color: red;
+}
+
+label {
+  display: block;
+  font: $font;
+  width: $width;
+  height: 24px;
+  text-align: left;
+  margin-bottom: 10px;
+}
