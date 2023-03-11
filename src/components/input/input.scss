@@ -23,37 +23,36 @@ $font: 1em sans-serif;
   outline: none;
 }
 
+@mixin textProperties() {
+    display: block;
+    font: $font;
+    width: $width;
+    height: 24px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
 input {
-  display: block;
-  font: $font;
-  width: $width;
-  height: 40px;
-  border-radius: 2px;
+    display: block;
+    font: $font;
+    width: $width;
+    height: 40px;
+    border-radius: 2px;
 
-  &.focused {
-    @include border($secondary, $focused-shadow);
-  }
+    &.focused {
+        @include border($secondary, $focused-shadow);
+    }
 
-  &.error {
-    @include border($error, $error-shadow);
-  }
+    &.error {
+        @include border($error, $error-shadow);
+    }
 }
 
 .error-text {
-  display: block;
-  font: $font;
-  width: $width;
-  height: 24px;
-  text-align: left;
-  margin-bottom: 10px;
-  color: red;
+    @include textProperties();
+    color: red;
 }
 
 label {
-  display: block;
-  font: $font;
-  width: $width;
-  height: 24px;
-  text-align: left;
-  margin-bottom: 10px;
+    @include textProperties();
 }
