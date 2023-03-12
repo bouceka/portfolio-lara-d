@@ -32,7 +32,7 @@ export const Input = ({ label, hint, optionalText, ...props }: Props) => {
 
   return (
     <div>
-      <div className='label-container'>
+      <div className="label-container">
         <label>{label}</label>
         {optionalText && <div className={'optional-text'}>{optionalText}</div>}
       </div>

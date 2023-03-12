@@ -1,10 +1,10 @@
 /*
-Primary:        #F4551E
-Secondary:      #C084E9
-Accent1:        #F99106
-Accent2:        #201411
-White:          #E5E2E8
-Secondary Text: #212121
+$primary:        #F4551E;
+$secondary:      #C084E9;
+$accent1:        #F99106;
+$accent2:        #201411;
+$white:          #E5E2E8;
+$secondary-text: #212121;
 */
 
 $primary: #F4551E;
@@ -75,6 +75,7 @@ input {
 
 .error-text {
     @include textProperties();
+    background-color: #fff3f3;
     width: $width;
     color: red;
 }
