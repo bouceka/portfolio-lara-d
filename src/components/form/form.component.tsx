@@ -1,6 +1,6 @@
 import './form.css';
 
-import { ErrorMessage,Field, Form, Formik } from 'formik';
+import { ErrorMessage, Field, Form, Formik } from 'formik';
 import * as React from 'react';
 import * as Yup from 'yup';
 
@@ -38,14 +38,27 @@ export const MyForm = () => {
         {(formikProps) => (
           <Form>
             <Field name="name">
-              {(fieldProps) => <Input label="Name" {...fieldProps} />}
+              {(fieldProps) => (
+                <Input
+                  label="Name"
+                  optionalText="optional"
+                  error={formikProps.touched.name && formikProps.errors.name}
+                  {...fieldProps}
+                />
+              )}
             </Field>
-            <ErrorMessage name="name" />
+
 
             <Field name="email">
-              {(fieldProps) => <Input label="Email" hint="hint: this is your email address" {...fieldProps} />}
+              {(fieldProps) => (
+                <Input
+                  label="Email"
+                  hint="hint: this is your email address"
+                  error={formikProps.touched.email && formikProps.errors.email}
+                  {...fieldProps}
+                />
+              )}
             </Field>
-            <ErrorMessage name="email" />
 
             <button type="submit">Submit</button>
           </Form>
