@@ -26,22 +26,48 @@ input.error {
   outline: none;
 }
 
+.hint-text {
+  display: block;
+  font: 1em sans-serif;
+  height: 24px;
+  text-align: left;
+  margin-bottom: 10px;
+  width: 300px;
+  color: #212121;
+  margin-bottom: 4px;
+  justify-content: space-around;
+}
+
+.label-container {
+  display: flex;
+  width: 300px;
+}
+.label-container label {
+  display: block;
+  font: 1em sans-serif;
+  height: 24px;
+  text-align: left;
+  margin-bottom: 10px;
+  flex: 1;
+  text-align: left;
+}
+.label-container .optional-text {
+  display: block;
+  font: 1em sans-serif;
+  height: 24px;
+  text-align: left;
+  margin-bottom: 10px;
+  flex: 1;
+  text-align: right;
+}
+
 .error-text {
   display: block;
   font: 1em sans-serif;
-  width: 300px;
   height: 24px;
   text-align: left;
   margin-bottom: 10px;
+  width: 300px;
   color: red;
-}
-
-label {
-  display: block;
-  font: 1em sans-serif;
-  width: 300px;
-  height: 24px;
-  text-align: left;
-  margin-bottom: 10px;
 }
 /*# sourceMappingURL=input.css.map */

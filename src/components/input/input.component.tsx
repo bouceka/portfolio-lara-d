@@ -4,9 +4,11 @@ import * as React from 'react';
 
 interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
+  hint?: string;
+  optionalText?: string;
 }
 
-export const Input = ({ label, ...props }: Props) => {
+export const Input = ({ label, hint, optionalText, ...props }: Props) => {
   const [isFocused, setIsFocused] = React.useState(false);
   const [hasError, setHasError] = React.useState(false);
 
@@ -30,7 +32,11 @@ export const Input = ({ label, ...props }: Props) => {
 
   return (
     <div>
-      <label>{label}</label>
+      <div className='label-container'>
+        <label>{label}</label>
+        {optionalText && <div className={'optional-text'}>{optionalText}</div>}
+      </div>
+
       <input
         {...props}
         onChange={handleInputChange}
@@ -38,9 +44,11 @@ export const Input = ({ label, ...props }: Props) => {
         onBlur={handleBlur}
         className={`${isFocused ? 'focused' : ''} ${hasError ? 'error' : ''}`}
       />
-      {hasError && (
-        <div className={'error-text'}>Error Test: Please enter at least 6 characters</div>
-      )}
+
+      {hint && <div className={'hint-text'}>{hint}</div>}
+
+      {hasError && (<div className={'error-text'}>Error: min 6 characters.</div>)}
+
     </div>
   );
 };

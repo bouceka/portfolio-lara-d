@@ -26,11 +26,11 @@ $font: 1em sans-serif;
 @mixin textProperties() {
     display: block;
     font: $font;
-    width: $width;
     height: 24px;
     text-align: left;
     margin-bottom: 10px;
 }
+
 
 input {
     display: block;
@@ -48,11 +48,36 @@ input {
     }
 }
 
+.hint-text {
+    @include textProperties();
+    width: $width;
+    color: #212121;
+    margin-bottom: 4px;
+    justify-content: space-around;
+}
+
+.label-container {
+    display: flex;
+    width: $width;
+
+    label {
+        @include textProperties();
+        flex: 1;
+        text-align: left;
+    }
+
+    .optional-text {
+        @include textProperties();
+        flex: 1;
+        text-align: right;
+      }
+}
+
 .error-text {
     @include textProperties();
+    width: $width;
     color: red;
 }
 
-label {
-    @include textProperties();
-}
+
+
