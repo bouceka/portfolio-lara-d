@@ -1,6 +1,6 @@
 import './form.css';
 
-import { ErrorMessage, Field, Form, Formik } from 'formik';
+import { Field, Form, Formik } from 'formik';
 import * as React from 'react';
 import * as Yup from 'yup';
 
@@ -47,7 +47,6 @@ export const MyForm = () => {
                 />
               )}
             </Field>
-
 
             <Field name="email">
               {(fieldProps) => (

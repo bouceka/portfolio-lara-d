@@ -26,7 +26,7 @@ export const Input = ({ label, hint, optionalText, error, ...props }: Props) => 
     <div>
       <div className="label-container">
         <label>{label}</label>
-        {optionalText && <div className={'optional-text'}>{optionalText}</div>}
+        {optionalText ? <div className={'optional-text'}>{optionalText}</div> : null}
       </div>
 
       <input
@@ -36,9 +36,9 @@ export const Input = ({ label, hint, optionalText, error, ...props }: Props) => 
         className={`${isFocused ? 'focused' : ''} ${error ? 'error' : ''}`}
       />
 
-      {hint && <div className={'hint-text'}>{hint}</div>}
+      {hint ? <div className={'hint-text'}>{hint}</div> : null}
 
-      {error && <div className={'error-text'}>{error}</div>}
+      {error ? <div className={'error-text'}>{error}</div> : null}
 
     </div>
   );
