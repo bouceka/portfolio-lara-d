@@ -75,7 +75,6 @@ input {
 
 .error-text {
     @include textProperties();
-    background-color: #fff3f3;
     width: $width;
     color: red;
 }
