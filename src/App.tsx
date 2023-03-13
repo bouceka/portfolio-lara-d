@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.scss';
 
 import { MyForm } from './components/form/form.component';
 

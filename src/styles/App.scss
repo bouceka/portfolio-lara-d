@@ -1,8 +1,10 @@
-@forward 'styles/abstracts/index';
-@forward 'styles/base/index';
-@forward 'styles/layout/index';
-@forward 'styles/components/index';
-@forward 'styles/pages/index';
+@use 'abstracts';
+@use 'base';
+@use 'components';
+@use 'layout';
+@use 'pages';
+
+
 
 :root {
   --primay: black;
