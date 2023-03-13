@@ -17,7 +17,7 @@ $width: 300px;
 $font: 1em sans-serif;
 
 @mixin border($color, $shadow) {
-  border: 2px solid $color;
+  border: 1px solid $color;
   border-radius: 2px;
   box-shadow: 0 0 0 5px $shadow;
   outline: none;
@@ -28,7 +28,6 @@ $font: 1em sans-serif;
     font: $font;
     height: 24px;
     text-align: left;
-    margin-bottom: 10px;
 }
 
 
@@ -37,22 +36,23 @@ input {
     font: $font;
     width: $width;
     height: 40px;
+    border: 1px solid #D6D1E2;
     border-radius: 2px;
-
-    &.focused {
-        @include border($secondary, $focused-shadow);
-    }
+    margin: 4px 0;
 
     &.error {
         @include border($error, $error-shadow);
     }
+
+	&:focus-visible {
+		@include border($secondary, $focused-shadow);
+	}
 }
 
 .hint-text {
     @include textProperties();
     width: $width;
     color: #212121;
-    margin-bottom: 4px;
     justify-content: space-around;
 }
 
