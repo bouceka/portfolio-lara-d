@@ -1,6 +1,6 @@
-import './form.css';
+import './form.scss';
 
-import { Field, Form, Formik } from 'formik';
+import { Field, Form, Formik, FormikProps } from 'formik';
 import * as React from 'react';
 import * as Yup from 'yup';
 
@@ -38,22 +38,22 @@ export const MyForm = () => {
         {(formikProps) => (
           <Form>
             <Field name="name">
-              {(fieldProps) => (
+              {(fieldProps: FormikProps<FormValues>) => (
                 <Input
                   label="Name"
                   optionalText="optional"
-                  error={formikProps.touched.name && formikProps.errors.name}
+                  error={formikProps.errors.name}
                   {...fieldProps}
                 />
               )}
             </Field>
 
             <Field name="email">
-              {(fieldProps) => (
+              {(fieldProps: FormikProps<FormValues>) => (
                 <Input
                   label="Email"
                   hint="hint: this is your email address"
-                  error={formikProps.touched.email && formikProps.errors.email}
+                  error={formikProps.errors.email}
                   {...fieldProps}
                 />
               )}
