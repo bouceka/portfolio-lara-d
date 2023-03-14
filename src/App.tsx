@@ -2,6 +2,7 @@ import './styles/App.scss';
 
 import React, { useState } from 'react';
 
+import { Action } from './components/action/action.component';
 import logo from './logo.svg';
 
 function App() {
@@ -15,11 +16,26 @@ function App() {
           🚀 Vite + React + Typescript 🤘 & <br />
           Eslint 🔥+ Prettier
         </p>
-
         <div className="body">
-          <button onClick={() => setCount((count) => count + 1)}>
+          <Action
+            styleType="primary"
+            as="button"
+            onClick={() => setCount((count) => count + 1)}
+          >
             🪂 Click me : {count}
-          </button>
+          </Action>
+          <Action styleType="secondary" as="button">
+            secondary
+          </Action>
+          <Action styleType="outline" as="button">
+            outline
+          </Action>
+          <Action styleType="link" as="button">
+            link
+          </Action>
+          <Action styleType="header" as="button">
+            header
+          </Action>
 
           <p> Don&apos;t forgot to install Eslint and Prettier in Your Vscode.</p>
 

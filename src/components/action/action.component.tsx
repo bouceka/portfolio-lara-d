@@ -1,9 +1,42 @@
 // @flow
+import './action.styles.scss';
+
 import * as React from 'react';
-type Props = {
+import { Link, LinkProps } from 'react-router-dom';
+
+type BaseProps = {
   children: React.ReactNode;
-  type: 'link' | 'button';
+  className?: string;
+  styleType: 'primary' | 'secondary' | 'outline' | 'link' | 'header';
 };
-export const Action = ({ children, ...props }: Props) => {
-  return <div>{children}</div>;
-};
+
+type ButtonAsButton = BaseProps &
+  Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, keyof BaseProps> & {
+    as?: 'button';
+  };
+
+type ButtonAsLink = BaseProps &
+  Omit<LinkProps, keyof BaseProps> & {
+    as: 'link';
+  };
+
+type ButtonProps = ButtonAsButton | ButtonAsLink;
+
+export function Action(props: ButtonProps) {
+  const allClassNames = `btn btn--${props.styleType ? props.styleType : ''} ${
+    props.className ? props.className : ''
+  }`;
+
+  if (props.as === 'link') {
+    const { className, styleType, as, ...rest } = props;
+    return <Link className={allClassNames} {...rest} />;
+  } else {
+    const { className, styleType, as, ...rest } = props;
+    return (
+      <button
+        className={`${allClassNames} ${props.disabled ? 'disabled' : ''}`}
+        {...rest}
+      />
+    );
+  }
+}
