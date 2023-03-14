@@ -53,20 +53,6 @@
     line-height: $lineHeight;
   }  
 
-@mixin heading($selector, $fontSize, $lineHeight) {
-  #{$selector} {
-    @include body-text(600, $fontSize, $lineHeight);
-
-    &.bold {
-      @include body-text(700, $fontSize, $lineHeight);
-    }
-
-    &--medium {
-      @include body-text(500, $fontSize, $lineHeight);
-    }
-  }
-}
-
 
 @mixin paragraph($type, $fontSize, $lineHeight) {
   .p--#{$type} {
