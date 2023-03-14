@@ -1,48 +1,25 @@
-import './input.css';
+import './input.scss';
 
+import { useState } from 'react';
 import * as React from 'react';
 
 interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
+  hint?: string;
+  optionalText?: string;
+  error?: string;
 }
 
-export const Input = ({ label, ...props }: Props) => {
-  const [isFocused, setIsFocused] = React.useState(false);
-  const [hasError, setHasError] = React.useState(false);
-
-  // Input handlers
-  const handleFocus = () => {
-    setIsFocused(true);
-  };
-
-  const handleBlur = () => {
-    setIsFocused(false);
-  };
-
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (event.target.value.length < 6) {
-      setHasError(true);
-    } else {
-      setHasError(false);
-    }
-    props.onChange && props.onChange(event);
-  };
-
+export const Input = ({ label, hint, optionalText, error, ...props }: Props) => {
   return (
     <div>
-      <label>{label}</label>
-      <input
-        {...props}
-        onChange={handleInputChange}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
-        className={`${isFocused ? 'focused' : ''} ${hasError ? 'error' : ''}`}
-      />
-      {hasError && (
-        <div style={{ color: 'red', textAlign: 'left' }}>
-          Error Test: Please enter at least 6 characters
-        </div>
-      )}
+      <div className="label-container">
+        <label>{label}</label>
+        {optionalText ? <div className={'optional-text'}>{optionalText}</div> : null}
+      </div>
+      <input {...props} className={`${error ? 'error' : ''}`} />
+      {hint ? <div className={'hint-text'}>{hint}</div> : null}
+      {error ? <div className={'error-text'}>{error}</div> : null}
     </div>
   );
 };
