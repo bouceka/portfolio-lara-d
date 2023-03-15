@@ -1,11 +1,11 @@
 import './styles/App.scss';
 
-import { MyForm } from './components/form/form.component';
+import { Title } from './components/title/title.component';
 
 function App() {
   return (
     <div className="App">
-      <MyForm />
+      <Title title="MEET LARA DRUMMOND" />
     </div>
   );
 }
