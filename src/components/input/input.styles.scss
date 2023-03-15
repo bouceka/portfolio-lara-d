@@ -1,0 +1,51 @@
+@use '../../styles/base' as *;
+@use '../../styles/abstracts' as *;
+
+@mixin border($color, $shadow) {
+  border: 1px solid $color;
+  border-radius: 2px;
+  box-shadow: 0 0 0 5px $shadow;
+  outline: none;
+}
+
+input {
+  height: 4rem;
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 2px;
+  margin: 4px 0;
+  padding: 0.8rem;
+  @extend .p--large--medium;
+  &.error {
+    @include border(var(--color-error), var(--color-error-light));
+  }
+
+  &:focus-visible {
+    @include border(var(--color-secondary), var(--color-secondary-light));
+  }
+}
+
+.hint-text {
+  @extend .p--large--medium;
+
+  color: var(--text-black-primary);
+  justify-content: space-around;
+}
+
+.label-container {
+  display: flex;
+  @extend .p--large--medium;
+
+  label {
+    flex: 1;
+  }
+
+  .optional-text {
+    flex: 1;
+    text-align: right;
+  }
+}
+
+.error-text {
+  @extend .p--large--medium;
+  color: var(--color-error);
+}
