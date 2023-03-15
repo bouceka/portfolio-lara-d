@@ -51,7 +51,8 @@
     font-weight: $fontWeight;
     font-size: $fontSize;
     line-height: $lineHeight;
-  }  
+    font-family: 'Spartan', sans-serif;
+  }
 
 
 @mixin paragraph($type, $fontSize, $lineHeight) {

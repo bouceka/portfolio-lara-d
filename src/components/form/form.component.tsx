@@ -4,6 +4,7 @@ import { Field, Form, Formik, FormikProps } from 'formik';
 import * as React from 'react';
 import * as Yup from 'yup';
 
+import { Action } from '../action/action.component';
 import { Input } from '../input/input.component';
 
 interface FormValues {
@@ -59,7 +60,9 @@ export const MyForm = () => {
               )}
             </Field>
 
-            <button type="submit">Submit</button>
+            <Action styleType="primary" as="button" type="submit">
+              Submit
+            </Action>
           </Form>
         )}
       </Formik>
