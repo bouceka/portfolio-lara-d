@@ -1,4 +1,4 @@
-import './form.scss';
+import './form.styles.scss';
 
 import { Field, Form, Formik, FormikProps } from 'formik';
 import * as React from 'react';
@@ -37,13 +37,14 @@ export const MyForm = () => {
         onSubmit={onSubmit}
       >
         {(formikProps) => (
-          <Form>
+          <Form className="form">
             <Field name="name">
               {(fieldProps: FormikProps<FormValues>) => (
                 <Input
                   label="Name"
                   optionalText="optional"
                   error={formikProps.errors.name}
+                  placeholder="Full Name"
                   {...fieldProps}
                 />
               )}

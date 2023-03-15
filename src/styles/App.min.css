@@ -1,0 +1,192 @@
+:root {
+  --color-primary: #f4551e;
+  --color-secondary: #c084e9;
+  --color-secondary-light: #e8ccfb;
+  --color-accent-1: #f99106;
+  --color-accent-2: #201411;
+  --color-error: #f41e1e;
+  --color-error-light: #fac6c6;
+  --color-neutral-25: #f6f7f8;
+  --color-neutral-50: #edeff2;
+  --color-neutral-100: #d0d3dd;
+  --color-neutral-200: #b0b5c4;
+  --color-neutral-300: #8f96ae;
+  --color-neutral-400: #78819b;
+  --color-neutral-500: #606b8a;
+  --color-neutral-600: #545d78;
+  --color-neutral-700: #454d63;
+  --color-neutral-800: #363c4e;
+  --color-neutral-900: #252a37;
+  --text-white-primary: #ffffff;
+  --text-white-secondary: rgba(255, 255, 255, 0.6);
+  --text-white-disabled: rgba(255, 255, 255, 0.38);
+  --text-black-primary: rgba(0, 0, 0, 0.88);
+  --text-black-secondary: rgba(0, 0, 0, 0.6);
+  --text-black-disabled: rgba(0, 0, 0, 0.38);
+  --background-color: #e5e2e8;
+  --color-white: #fefefe;
+  --default-font-size: 1.6rem;
+  --grid-width: 115.2rem;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 96em) {
+  html {
+    font-size: 75%;
+  }
+}
+body {
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--text-black-primary);
+  background-color: var(--background-color);
+}
+.row {
+  max-width: var(--grid-width);
+  margin: 0 auto;
+}
+@media only screen and (max-width: 64em) {
+  .row {
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+}
+@font-face {
+  font-family: 'Spartan';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/src/assets/font/Spartan-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-weight: 600;
+  font-style: normal;
+  src: url('/src/assets/font/Spartan-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-weight: 500;
+  font-style: normal;
+  src: url('/src/assets/font/Spartan-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/src/assets/font/Spartan-Regular.ttf') format('truetype');
+}
+h1 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  font-family: 'Spartan', sans-serif;
+}
+h2 {
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-family: 'Spartan', sans-serif;
+}
+h3 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-family: 'Spartan', sans-serif;
+}
+h4 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-family: 'Spartan', sans-serif;
+}
+h5 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-family: 'Spartan', sans-serif;
+}
+h6 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-family: 'Spartan', sans-serif;
+}
+.p--large {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: 'Spartan', sans-serif;
+}
+.p--large--medium {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: 'Spartan', sans-serif;
+}
+.p--large--bold {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: 'Spartan', sans-serif;
+}
+.p--medium {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-family: 'Spartan', sans-serif;
+}
+.p--medium--medium {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-family: 'Spartan', sans-serif;
+}
+.p--medium--bold {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-family: 'Spartan', sans-serif;
+}
+.p--small {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-family: 'Spartan', sans-serif;
+}
+.p--small--medium {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-family: 'Spartan', sans-serif;
+}
+.p--small--bold {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-family: 'Spartan', sans-serif;
+}
+.App {
+  padding: 40px;
+}
+/*# sourceMappingURL=App.min.css.map */
