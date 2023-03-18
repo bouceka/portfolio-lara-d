@@ -6,7 +6,6 @@ import { MyForm } from './components/form/form.component';
 function App() {
   return (
     <div className="App">
-
       <Checkbox label="Checkbox" />
     </div>
   );
