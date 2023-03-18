@@ -1,0 +1,26 @@
+@use '../../styles/base' as *;
+@use '../../styles/abstracts' as *;
+
+input[type='checkbox'] {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 1px solid purple;
+  border-radius: 2px;
+  margin-right: 0.5rem;
+
+  &:focus-visible {
+    border: 1px solid purple;
+    box-shadow: 0 0 0 5px purple;
+    outline: none;
+  }
+}
+
+.label-container {
+  display: flex;
+  @extend .p--large--medium;
+
+  label {
+    display: flex;
+    align-items: center;
+  }
+}
