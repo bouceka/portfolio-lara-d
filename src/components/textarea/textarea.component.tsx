@@ -13,7 +13,7 @@ export const Textarea = ({ label, ...props }: Props) => {
       <div className="textarea-label-container">
         <label>{label}</label>
       </div>
-      <textarea placeholder="content" {...props} />
+      <textarea className="textarea" placeholder="content" {...props} />
     </>
   );
 };
