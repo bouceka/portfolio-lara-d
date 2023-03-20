@@ -1,5 +1,4 @@
 // @flow
-import './action.styles.scss';
 
 import * as React from 'react';
 import { Link, LinkProps } from 'react-router-dom';

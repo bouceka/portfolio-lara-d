@@ -1,5 +1,4 @@
 // @flow
-import './footer.styles.scss';
 
 import * as React from 'react';
 import { Link } from 'react-router-dom';

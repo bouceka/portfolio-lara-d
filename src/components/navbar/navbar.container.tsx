@@ -4,10 +4,15 @@ import * as React from 'react';
 import { Footer } from '../footer/footer.component';
 import { Navbar } from './navbar.component';
 
-export const NavbarContainer = (WrappedComponent: React.FC) => {
+interface Props {
+  styleType?: 'black' | 'white';
+  WrappedComponent: React.FC;
+}
+
+export const NavbarContainer = ({ WrappedComponent, styleType = 'black' }: Props) => {
   return (
     <>
-      <Navbar />
+      <Navbar styleType={styleType} />
       <WrappedComponent />
       <Footer />
     </>
