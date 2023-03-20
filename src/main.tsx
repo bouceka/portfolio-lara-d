@@ -4,40 +4,39 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
+import { NavbarContainer } from './components/navbar/navbar.container';
 import { AboutMe } from './pages/about-me';
 import { ContactMe } from './pages/contact-me';
 import { Gallery } from './pages/gallery';
 import { GalleryDetail } from './pages/gallery-detail';
 import { Homepage } from './pages/homepage';
-import { Navbar } from './components/navbar/navbar.component';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Homepage />,
+    element: NavbarContainer(Homepage),
   },
 
   {
     path: '/contact-me',
-    element: <ContactMe />,
+    element: NavbarContainer(ContactMe),
   },
   {
     path: '/about-me',
-    element: <AboutMe />,
+    element: NavbarContainer(AboutMe),
   },
   {
     path: '/gallery',
-    element: <Gallery />,
+    element: NavbarContainer(Gallery),
   },
   {
     path: '/gallery/:galleryType',
-    element: <GalleryDetail />,
+    element: NavbarContainer(GalleryDetail),
   },
 ]);
 
 ReactDOM.render(
   <React.StrictMode>
-    <Navbar />
     <RouterProvider router={router} />
   </React.StrictMode>,
   document.getElementById('root'),
