@@ -1,6 +1,26 @@
 @use '../../styles/base' as *;
 @use '../../styles/abstracts' as *;
 
-header {
-    position: sticky;
+.header {
+  position: sticky;
+  background-color: var(--background-color);
+  padding: 2.4rem 0;
+  & nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & ul {
+    display: flex;
+    gap: 6.4rem;
+    & > li {
+      list-style: none;
+      text-transform: uppercase;
+    }
+  }
+
+  &__logo {
+    height: 6.4rem;
+  }
 }
