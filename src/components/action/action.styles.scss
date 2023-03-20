@@ -71,12 +71,14 @@
     }
   }
 
-  &--header {
+  &#{&}--header {
     color: var(--text-black-primary);
     background-color: transparent;
     padding: 0;
-    @include body-text(700, 2rem, 2.4rem);
+    @include body-text(600, 2rem, 2.4rem);
+    border-bottom: 2px solid transparent;
     transition: all 0.1s;
+    border-radius: 0;
     &:hover {
       border-bottom: 2px solid var(--color-primary);
     }
@@ -85,6 +87,11 @@
       color: var(--color-primary);
       border-bottom: 2px solid var(--color-primary);
     }
+
+		&.active{
+			color: var(--color-primary);
+      border-bottom: 2px solid var(--color-primary);
+		}
   }
 
   &.disabled {
