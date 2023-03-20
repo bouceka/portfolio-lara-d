@@ -7,7 +7,7 @@ import { Link, LinkProps } from 'react-router-dom';
 type BaseProps = {
   children: React.ReactNode;
   className?: string;
-  styleType: 'primary' | 'secondary' | 'outline' | 'link' | 'header';
+  styleType: 'primary' | 'secondary' | 'outline' | 'link' | 'header' | 'cta';
 };
 
 type ButtonAsButton = BaseProps &
