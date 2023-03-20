@@ -53,11 +53,11 @@
       background-color: rgba(249, 145, 6, 0.25);
     }
   }
-  &--link {
+  &#{&}--link {
     color: var(--text-black-primary);
     background-color: transparent;
     transition: background-color 0.2s;
-    padding: 1rem 0.4rem 0.6rem 0.4rem;
+    padding: 1rem 0.4rem;
     transition: border 0.2s;
 
     @extend .p--large;
