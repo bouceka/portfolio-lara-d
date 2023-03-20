@@ -88,10 +88,55 @@
       border-bottom: 2px solid var(--color-primary);
     }
 
-		&.active{
-			color: var(--color-primary);
+    &.active {
+      color: var(--color-primary);
       border-bottom: 2px solid var(--color-primary);
-		}
+    }
+  }
+
+  &#{&}--cta {
+    background-color: transparent;
+    padding: 1.6rem 0.8rem;
+    @include body-text(600, 1.6rem, 2.4rem);
+    border-bottom: 2px solid transparent;
+    transition: all 0.1s;
+    border-radius: 0;
+    white-space: nowrap;
+    display: flex;
+    gap: 1.6rem;
+    text-decoration: underline;
+
+    &:active {
+      color: var(--text-black-primary);
+    }
+    &.primary {
+
+      color: var(--text-black-primary);
+      & > svg > path {
+        fill: var(--text-black-primary);
+      }
+
+      &:hover {
+        color: var(--text-black-secondary);
+        & > svg > path {
+          fill: var(--text-black-secondary);
+        }
+      }
+    }
+    &.secondary {
+      color: var(--color-white);
+      & > svg > path {
+        fill: var(--color-white);
+      }
+
+
+      &:hover {
+        color: var(--text-white-secondary);
+        & > svg > path {
+          fill: var(--text-white-secondary);
+        }
+      }
+    }
   }
 
   &.disabled {
