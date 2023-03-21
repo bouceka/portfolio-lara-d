@@ -1,4 +1,5 @@
 // @flow
+import { AboutMe } from '../components/about-me/about-me.component';
 import { CTA } from '../components/cta/cta.component';
 import { Hero } from '../components/hero/hero.component';
 import { Marquee } from '../components/marquee/marguee.component';
@@ -14,6 +15,7 @@ export const Homepage = () => {
         styleType="secondary"
         heading="Hard-hitting visuals and storytelling based on Vancouver Island, BC."
       />
+      <AboutMe />
     </div>
   );
 };

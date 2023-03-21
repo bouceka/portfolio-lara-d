@@ -1,0 +1,35 @@
+.about-section {
+  border-bottom: 1px solid var(--text-black-primary);
+  & h1 {
+    padding: 4rem 0 1.6rem 1.6rem;
+    border-left: 1px solid var(--text-black-primary);
+    border-bottom: 1px solid var(--text-black-primary);
+  }
+
+  &__container {
+    border-bottom: 1px solid var(--text-black-primary);
+    border-right: none;
+  }
+  &__container > .row {
+    display: flex;
+    gap: 9.6rem;
+    align-items: center;
+    border-left: 1px solid var(--text-black-primary);
+
+    & > img {
+      width: 56rem;
+      border-right: 1px solid var(--text-black-primary);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    justify-items: end;
+
+    & > a {
+      align-self: end;
+    }
+  }
+}
