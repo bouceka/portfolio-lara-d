@@ -1,3 +1,5 @@
+import './styles/App.scss';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -12,24 +14,24 @@ import { Homepage } from './pages/homepage';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: NavbarContainer(Homepage),
+    element: <NavbarContainer WrappedComponent={Homepage} styleType="white" />,
   },
 
   {
     path: '/contact-me',
-    element: NavbarContainer(ContactMe),
+    element: <NavbarContainer WrappedComponent={ContactMe} />,
   },
   {
     path: '/about-me',
-    element: NavbarContainer(AboutMe),
+    element: <NavbarContainer WrappedComponent={AboutMe} />,
   },
   {
     path: '/gallery',
-    element: NavbarContainer(Gallery),
+    element: <NavbarContainer WrappedComponent={Gallery} />,
   },
   {
     path: '/gallery/:galleryType',
-    element: NavbarContainer(GalleryDetail),
+    element: <NavbarContainer WrappedComponent={GalleryDetail} />,
   },
 ]);
 
