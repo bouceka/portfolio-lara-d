@@ -1,0 +1,22 @@
+.image-slider {
+  display: flex;
+  gap: 2rem;
+  & img {
+    height: 25.6rem;
+    width: 27.2rem;
+	animation: 30s linear marquee infinite;
+  }
+}
+
+
+@keyframes image-slider {
+	0% {
+	  transform: translateX(0);
+	}
+	50% {
+	  transform: translateX(-100vw);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
