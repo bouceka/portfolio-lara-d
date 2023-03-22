@@ -12,7 +12,7 @@ type Props = {
 };
 export const RecentProjectsItem = ({ imgURL, title, year, description, link }: Props) => {
   return (
-    <div className="recent-projects-item">
+    <div className="recent-projects-item row">
       <div className="recent-projects-item__content">
         <h5 className="recent-projects-item__title">{title}</h5>
         <span className="recent-projects-item__year">{year}</span>
