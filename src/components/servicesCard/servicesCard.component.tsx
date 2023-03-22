@@ -1,18 +1,24 @@
+import './servicesCard.styles.scss';
+
 import React from 'react';
 
+import { Action } from '../action/action.component';
+
 // Create interface for props
-interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
+interface Props {
   serviceLabel: string;
+  image: string;
+  color: 'primary' | 'secondary' | 'accent-1';
 }
 
-export const ServiceCard = ({ label, ...props }: Props) => {
+export const ServiceCard = ({ serviceLabel, color, image, ...props }: Props) => {
   return (
-    <div className="container">
-      <div className="leftBar">
-        <div className="leftBar-Text">{label}</div>
+    <div className="container" style={{ backgroundImage: `url(${image})` }}>
+      <div className="leftBar" style={{ backgroundColor: `var(--color-${color})` }}>
+        <div className="leftBar-Text">{serviceLabel}</div>
       </div>
       <div className="bottomBar">
-        {/* <div className='bottomBar-Button'>Button</div> */}
+        <button>View Work</button>
       </div>
     </div>
   );

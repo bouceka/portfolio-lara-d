@@ -1,48 +1,7 @@
 @use '../../styles/base' as *;
 @use '../../styles/abstracts' as *;
 
-.container {
+.service-card-container {
     display: flex;
-    height: 560px;
-    width: 576px;
-    background-image: url(../../assets/images/CB-LaraDrummond-Moodboard-25.jpg);
-    background-size: cover;
-  }
-  
-  .leftBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    
-    background-color: orange;
-    width: 88px;
-    height: 560px;
-
-    .leftBar-Text {
-        writing-mode: vertical-rl;
-        text-orientation: upright;
-        letter-spacing: 2rem;
-    }
-  }
-
-  .bottomBar {
-    display: flex;
-    align-self: flex-end;
-    justify-content: flex-end;
-    width: 488px;
-    height: 88px;
-    background-color: black;
-    opacity: 50%;
-    color: white;
-    
-
-    .bottomBar-Button {
-        display: flex;
-        align-self: center;
-        justify-content: flex-end;
-        opacity: 100%;
-        margin-right: 3rem;
-
-    }
+    flex-wrap: wrap;
   }
