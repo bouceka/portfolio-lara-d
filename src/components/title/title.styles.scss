@@ -1,0 +1,17 @@
+@use '../../styles/base' as *;
+@use '../../styles/abstracts' as *;
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+
+.title-divider {
+  border-bottom: 1px solid var(--text-black-primary);
+}
+
+.subtitle {
+  color: var(--color-accent-2);
+  padding-top: 1.6rem;
+}

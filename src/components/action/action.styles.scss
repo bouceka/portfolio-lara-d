@@ -105,12 +105,11 @@
     display: flex;
     gap: 1.6rem;
     text-decoration: underline;
-
+    align-items: center;
     &:active {
       color: var(--text-black-primary);
     }
     &.primary {
-
       color: var(--text-black-primary);
       & > svg > path {
         fill: var(--text-black-primary);
@@ -128,7 +127,6 @@
       & > svg > path {
         fill: var(--color-white);
       }
-
 
       &:hover {
         color: var(--text-white-secondary);

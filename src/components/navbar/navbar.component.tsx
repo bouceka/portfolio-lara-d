@@ -1,29 +1,30 @@
 // @flow
-import './navbar.styles.scss';
-import '../action/action.styles.scss';
 
 import * as React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 import BlackLogoH from '../../assets/black-logo-h.png';
-import { Action } from '../action/action.component';
+import WhiteLogoH from '../../assets/white-logo-h.png';
 
-export const Navbar = () => {
+interface Props {
+  styleType: 'black' | 'white';
+}
+
+export const Navbar = ({ styleType = 'black' }: Props) => {
   return (
-    <header className="header">
+    <header className={`header ${styleType}`}>
       <div className="row">
         <nav>
           <Link to="/">
-            <img className="header__logo" src={BlackLogoH} alt="Lara Drummond logo" />
+            <img
+              className="header__logo"
+              src={styleType === 'black' ? BlackLogoH : WhiteLogoH}
+              alt="Lara Drummond logo"
+            />
           </Link>
           <ul>
             <li>
-              <NavLink
-                className={({ isActive }) =>
-                  `btn btn--header ${isActive ? 'active' : ''}`
-                }
-                to={'/gallery'}
-              >
+              <NavLink className="btn btn--header" to={'/gallery'}>
                 Gallery
               </NavLink>
             </li>
