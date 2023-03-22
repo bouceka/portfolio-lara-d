@@ -1,6 +1,7 @@
 node_modules
 .DS_Store
 .firebase
+.yarn
 dist
 dist-ssr
 *.local
