@@ -15,6 +15,8 @@ export const AboutMe = () => {
       <div className="service-card-container">
         <ServiceCard serviceLabel="PRODUCT" color="secondary" image={ProdctImage} />
         <ServiceCard serviceLabel="FOOD" color="accent-1" image={FoodImage} />
+      </div>
+      <div className="service-card-container">
         <ServiceCard serviceLabel="EDITORIAL" color="accent-1" image={EditorialImage} />
         <ServiceCard serviceLabel="FASHION" color="primary" image={FashionImage} />
       </div>

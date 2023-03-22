@@ -18,7 +18,9 @@ export const ServiceCard = ({ serviceLabel, color, image, ...props }: Props) => 
         <div className="leftBar-Text">{serviceLabel}</div>
       </div>
       <div className="bottomBar">
-        <button>View Work</button>
+        <Action styleType="cta" to={'/gallery'} as={'link'}>
+          SEE MORE
+        </Action>
       </div>
     </div>
   );
