@@ -11,6 +11,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "arrows-svg": "^1.5.6",
     "formik": "^2.2.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
