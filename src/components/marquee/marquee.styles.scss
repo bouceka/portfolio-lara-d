@@ -1,0 +1,22 @@
+.marquee {
+  background-color: var(--color-secondary);
+  padding: 1.2rem 1.6rem;
+  overflow-x: hidden;
+  white-space: nowrap;
+  & span {
+    animation: 30s linear marquee infinite;
+	display: block;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

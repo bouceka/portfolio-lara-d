@@ -1,0 +1,20 @@
+.cta {
+  padding: 6.4rem 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  & h3 {
+    width: 56rem;
+  }
+
+  &.primary {
+    background-color: var(--color-accent-1);
+    color: var(--text-black-primary);
+  }
+  &.secondary {
+    background-color: var(--color-accent-2);
+    color: var(--text-white-primary);
+  }
+}
