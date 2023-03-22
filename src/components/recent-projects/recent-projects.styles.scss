@@ -1,0 +1,48 @@
+.recent-projects {
+  padding: 6.4rem 0;
+
+  & .row {
+  }
+  &-item {
+    display: flex;
+    gap: 8rem;
+    border-bottom: 1px solid var(--text-black-primary);
+
+    &:nth-of-type(2) img {
+       border-top: 1px solid var(--text-black-primary);
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: end;
+      gap: 0.8rem;
+      & > a {
+      }
+    }
+
+    &__title {
+      border-bottom: 1px solid var(--text-black-primary);
+      position: relative;
+      // &::before {
+      //   position: absolute;
+      //   content: '';
+      // 	bottom: 0;
+      // 	left: 0;
+      // 	width: 100%;
+      //   border-bottom: 1px solid var(--text-black-primary);
+      // }
+    }
+
+    &__description {
+      margin: 4rem 0;
+      text-align: right;
+    }
+    & img {
+      height: 60rem;
+      border-left: 1px solid var(--text-black-primary);
+      border-right: 1px solid var(--text-black-primary);
+    }
+  }
+}

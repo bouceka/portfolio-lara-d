@@ -5,6 +5,7 @@ import { Hero } from '../components/hero/hero.component';
 import { ImageSlider } from '../components/image-slider/image-slider.component';
 import { Marquee } from '../components/marquee/marguee.component';
 import { Navbar } from '../components/navbar/navbar.component';
+import { RecentProjects } from '../components/recent-projects/recent-projects.component';
 
 export const Homepage = () => {
   return (
@@ -18,6 +19,7 @@ export const Homepage = () => {
       />
       <AboutMe />
       <ImageSlider />
+      <RecentProjects />
     </div>
   );
 };
