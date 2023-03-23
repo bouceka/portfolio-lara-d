@@ -4,7 +4,5 @@ type Props = {
   imageList: { alt: string; imgURL: string };
 };
 export const ImageCarousel = (props: Props) => {
-  return <div className="image-carousel">
-	
-  </div>;
+  return <div className="image-carousel"></div>;
 };
