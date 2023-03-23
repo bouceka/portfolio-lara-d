@@ -17,7 +17,7 @@ export const ServiceCard = ({ serviceLabel, color, image }: Props) => {
         <div className="left-bar-text">{serviceLabel}</div>
       </div>
       <div className="bottom-bar">
-        <Action as="link" styleType="cta" className="secondary" to="/contact-me">
+        <Action as="link" styleType="cta" className="secondary" to="/gallery">
           SEE MORE <ArrowSVG />
         </Action>
       </div>

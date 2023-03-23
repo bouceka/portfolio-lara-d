@@ -3,7 +3,9 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
-export type Services = 'product' | 'fashion' | 'food' | 'editorial';
+import { Services } from '../types/service';
+import { Marquee } from '../components/marquee/marguee.component';
+import { CTA } from '../components/cta/cta.component';
 
 const services: Services[] = ['product', 'fashion', 'food', 'editorial'];
 
@@ -18,5 +20,14 @@ export const GalleryDetail = () => {
       navigate('/');
     }
   }, []);
-  return <div>{galleryType}</div>;
+  return (
+    <div className="page">
+      <Marquee color="accent-1" />
+      <CTA
+        heading="Let’s create photography magic together."
+        cta="Get started"
+        styleType="secondary"
+      />
+    </div>
+  );
 };
