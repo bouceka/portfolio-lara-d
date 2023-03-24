@@ -1,0 +1,73 @@
+@use '../../styles/abstracts' as *;
+
+.gallery-feature {
+  margin: 8rem 0;
+  &__image-slider {
+    position: relative;
+
+    & .chevron {
+      background-color: rgba(255, 255, 255, 0.587);
+      border: none;
+      position: absolute;
+      transform: translate(0, -50%);
+      padding: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      top: 50%;
+      z-index: 2;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+      &-right {
+        right: 0;
+      }
+    }
+
+    & .slider {
+      height: 30rem;
+      transition: all 2s;
+      display: inline-block;
+      white-space: nowrap;
+
+      & img {
+        height: 30rem;
+        border-top: 1px solid var(--text-black-primary);
+        border-bottom: 1px solid var(--text-black-primary);
+      }
+
+      &.left {
+        transform: translateX(calc(100vw - 100%));
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2.4rem;
+    width: 35%;
+    margin-bottom: 2.4rem;
+  }
+  &__title {
+    padding-bottom: 1.6rem;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 100rem;
+      border-bottom: 1px solid var(--text-black-primary);
+      transform: translateX(calc(-100rem));
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid var(--text-black-primary);
+    }
+  }
+}

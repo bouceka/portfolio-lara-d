@@ -20,16 +20,32 @@ export const Gallery = () => {
         />
         <div className="service-card-group">
           <div className="service-card-container">
-            <ServiceCard serviceLabel="PRODUCT" color="secondary" image={ProductImage} />
-            <ServiceCard serviceLabel="FOOD" color="accent-1" image={FoodImage} />
+            <ServiceCard
+              serviceLabel="PRODUCT"
+              color="secondary"
+              image={ProductImage}
+              link="product"
+            />
+            <ServiceCard
+              serviceLabel="FOOD"
+              color="accent-1"
+              image={FoodImage}
+              link="food"
+            />
           </div>
           <div className="service-card-container">
             <ServiceCard
               serviceLabel="EDITORIAL"
               color="accent-1"
               image={EditorialImage}
+              link="editorial"
             />
-            <ServiceCard serviceLabel="FASHION" color="primary" image={FashionImage} />
+            <ServiceCard
+              serviceLabel="FASHION"
+              color="primary"
+              image={FashionImage}
+              link="fashion"
+            />
           </div>
         </div>
       </div>
