@@ -1,5 +1,3 @@
-import './checkbox.styles.scss';
-
 import React from 'react';
 
 interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
