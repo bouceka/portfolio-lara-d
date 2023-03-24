@@ -3,9 +3,11 @@ import * as React from 'react';
 
 import { ReactComponent as PointerSVG } from '../assets/Pointer.svg';
 import { Action } from '../components/action/action.component';
+import { Checkbox } from '../components/checkbox/checkbox.component';
 import { Input } from '../components/input/input.component';
-import { Title } from '../components/title/title.component';
 import { Marquee } from '../components/marquee/marguee.component';
+import { Textarea } from '../components/textarea/textarea.component';
+import { Title } from '../components/title/title.component';
 
 export const ContactMe = () => {
   return (
@@ -68,6 +70,14 @@ export const ContactMe = () => {
             <div className="contact-form__group">
               <Input label="Phone Number" placeholder="+1 (123) 456 7890" />
             </div>
+            <div className="contact-form__group checkbox-group">
+              <label htmlFor="photoType">Type of Photography</label>
+              <Checkbox label="Editorial" />
+              <Checkbox label="Fashion" />
+              <Checkbox label="Food" />
+              <Checkbox label="Product" />
+              <Checkbox label="Other" />
+            </div>
             <div className="contact-form__group">
               <Input label="Project Budget" placeholder="" />
             </div>
@@ -82,14 +92,17 @@ export const ContactMe = () => {
               />
             </div>
             <div className="contact-form__group">
-              <div className="form-item">
-                <div className="label-container">
-                  <label>
-                    Tell me about your photography goals
-                    <textarea placeholder="Enter message..." />
-                  </label>
-                </div>
-              </div>
+              <Textarea
+                placeholder="Enter message..."
+                label="Tell me about your photography goals"
+              />
+            </div>
+            <div className="contact-form__group checkbox-group">
+              <label htmlFor="photoType">How did you hear about me?</label>
+              <Checkbox label="Referral" />
+              <Checkbox label="Social Media" />
+              <Checkbox label="Internet" />
+              <Checkbox label="Other" />
             </div>
             <Action as="button" styleType="secondary">
               let’s get started

@@ -39,9 +39,10 @@ textarea {
 
 .label-container {
   display: flex;
-  @extend .p--large--medium;
 
-  label {
+  .input-label {
+    @extend .p--large--bold;
+
     flex: 1;
   }
 

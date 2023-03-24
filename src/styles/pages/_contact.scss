@@ -31,6 +31,15 @@
       margin: 2.4rem 0;
     }
 
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      & > label {
+        @extend .p--large--bold;
+      }
+    }
+
     & .form-item {
       width: 100%;
     }
