@@ -1,0 +1,39 @@
+@use '../../styles/base' as *;
+@use '../../styles/abstracts' as *;
+
+input[type='checkbox'] {
+  appearance: none;
+  height: 1.8rem;
+  width: 1.8rem;
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 2px;
+  margin-right: 0.5rem;
+  background-color: transparent;
+  position: relative;
+
+  &:checked {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+  }
+
+  &:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+}
+
+.label-container {
+  display: flex;
+  @extend .p--large--medium;
+
+  label {
+    display: flex;
+    @extend .p--large--medium;
+  }
+}
