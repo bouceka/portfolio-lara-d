@@ -4,7 +4,8 @@
 .textarea-label-container {
     display: flex;
     align-items: center;
-    @extend .p--large--medium;
+    @extend .p--large--bold;
+
 
     label {
         display: block;

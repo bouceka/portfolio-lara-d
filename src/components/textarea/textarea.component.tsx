@@ -7,11 +7,11 @@ interface Props extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
 
 export const Textarea = ({ label, ...props }: Props) => {
   return (
-    <>
+    <div className="form-item">
       <div className="textarea-label-container">
         <label>{label}</label>
       </div>
       <textarea className="textarea" placeholder="content" {...props} />
-    </>
+    </div>
   );
 };
