@@ -9,8 +9,8 @@
         display: flex;
         flex: 5;
         flex-direction: column;
-        background-color: red;
         width: 100rem;
+        border-left: 1px solid var(--text-black-primary);
 
 
         .testimonials-header {
@@ -19,7 +19,10 @@
             width: 100%;
             align-items: flex-end;
             padding-top: 10rem;
-            background-color: yellow;
+            padding-bottom: 1rem;
+            padding-left: 2rem;
+            border-bottom: 1px solid var(--text-black-primary);
+            font-weight: 900;
         }
 
         .testimonials-container {
@@ -29,25 +32,26 @@
             flex: 2;
             justify-content: center;
             align-items: center;
-            background-color: pink;
             justify-content: space-between;
+            border-bottom: 1px solid var(--text-black-primary);
 
             .testimonial {
                 display: flex;
                 flex-direction: column;
                 flex: 1;
-                height: 100%;
-                padding: 4rem;
+                padding: 8rem;
+                align-items: flex-start;
 
                 .testimonial-text {
-                    background-color: white;
                     height: 100%;
                     flex:4;
+                    padding-bottom: 2rem;
                 }
 
                 .testimonial-author {
                     height: 100%;
                     flex: 1;
+                    font-weight: 900;
                 }
             }
         }
