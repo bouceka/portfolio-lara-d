@@ -3,7 +3,6 @@
 
 .testimonials-section {
     display: flex;
-    
 
     .right-column {
         display: flex;
@@ -31,7 +30,7 @@
             flex-direction: row;
             flex: 2;
             justify-content: center;
-            align-items: center;
+            align-items: start;
             justify-content: space-between;
             border-bottom: 1px solid var(--text-black-primary);
 
@@ -40,7 +39,8 @@
                 flex-direction: column;
                 flex: 1;
                 padding: 8rem;
-                align-items: flex-start;
+
+
 
                 .testimonial-text {
                     height: 100%;
