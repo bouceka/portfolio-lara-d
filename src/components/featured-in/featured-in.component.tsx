@@ -11,7 +11,7 @@ import TrioLogo from '../../assets/images/trio-logo.png';
 import YamLogo from '../../assets/images/yam-logo.png';
 import { Title } from '../title/title.component';
 
-export default function FeaturedIn() {
+export const FeaturedIn = () => {
   return (
     <section className="row">
       <div className="featured-section">
@@ -36,4 +36,4 @@ export default function FeaturedIn() {
       </div>
     </section>
   );
-}
+};
