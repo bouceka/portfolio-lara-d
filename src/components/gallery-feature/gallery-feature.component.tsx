@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+
 import { ImageCarousel } from './image-carousel.component';
 interface Props {
   imageList: { alt: string; imgURL: string }[];
