@@ -19,6 +19,11 @@ export const Footer = () => {
               <ul>
                 <li className="footer__title">Menu</li>
                 <li>
+                  <Action as="link" styleType="link" to="/">
+                    Home
+                  </Action>
+                </li>
+                <li>
                   <Action as="link" styleType="link" to="/gallery">
                     Gallery
                   </Action>
@@ -51,6 +56,11 @@ export const Footer = () => {
                 <li>
                   <Action as="link" styleType="link" to="#!">
                     Pinterest
+                  </Action>
+                </li>
+                <li>
+                  <Action as="link" styleType="link" to="#!">
+                    Twitter
                   </Action>
                 </li>
               </ul>

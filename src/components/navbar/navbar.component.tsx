@@ -24,6 +24,11 @@ export const Navbar = ({ styleType = 'black' }: Props) => {
           </Link>
           <ul>
             <li>
+              <NavLink className="btn btn--header" to={'/'}>
+                Home
+              </NavLink>
+            </li>
+            <li>
               <NavLink className="btn btn--header" to={'/gallery'}>
                 Gallery
               </NavLink>

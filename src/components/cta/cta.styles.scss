@@ -4,7 +4,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
-		align-items: center;
+    align-items: center;
   }
   & h3 {
     width: 56rem;
@@ -13,9 +13,14 @@
   &.primary {
     background-color: var(--color-accent-1);
     color: var(--text-black-primary);
+    border-bottom: 1px solid var(--text-black-primary);
   }
-  &.secondary {
+  &.accent-2 {
     background-color: var(--color-accent-2);
     color: var(--text-white-primary);
+  }
+  &.secondary {
+    background-color: var(--color-secondary);
+    color: var(--text-black-primary);
   }
 }

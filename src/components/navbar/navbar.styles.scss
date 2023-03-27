@@ -9,6 +9,7 @@
   top: 0;
   left: 0;
   z-index: 1;
+	border-bottom: 1px solid var(--text-black-primary);
   & nav {
     display: flex;
     justify-content: space-between;
@@ -30,6 +31,7 @@
 
   &.white {
     background-color: transparent;
+		border: none;
   }
 
   &.white .btn.btn--header {
