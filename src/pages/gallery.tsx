@@ -18,8 +18,8 @@ export const Gallery = () => {
           title="Portfolio"
           subtitle="my goal is to bring your creative vision to life"
         />
-        <div className="service-card-group">
-          <div className="service-card-container">
+        <div className="service-cards-group">
+          <div className="service-cards-container">
             <ServiceCard
               serviceLabel="PRODUCT"
               color="secondary"
@@ -33,7 +33,7 @@ export const Gallery = () => {
               link="food"
             />
           </div>
-          <div className="service-card-container">
+          <div className="service-cards-container">
             <ServiceCard
               serviceLabel="EDITORIAL"
               color="accent-1"

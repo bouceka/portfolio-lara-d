@@ -1,7 +1,4 @@
 // @flow
-
-import './featured-in.styles.scss';
-
 import * as React from 'react';
 
 import BoulevardLogo from '../../assets/images/boulevard-logo.png';
