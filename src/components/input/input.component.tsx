@@ -1,5 +1,3 @@
-import './input.styles.scss';
-
 import * as React from 'react';
 
 interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
@@ -11,14 +9,14 @@ interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
 
 export const Input = ({ label, hint, optionalText, error, ...props }: Props) => {
   return (
-    <>
+    <div className="form-item">
       <div className="label-container">
-        <label>{label}</label>
+        <label className="input-label">{label}</label>
         {optionalText ? <div className={'optional-text'}>{optionalText}</div> : null}
       </div>
       <input {...props} className={`${error ? 'error' : ''}`} />
       {hint ? <div className={'hint-text'}>{hint}</div> : null}
       {error ? <div className={'error-text'}>{error}</div> : null}
-    </>
+    </div>
   );
 };
