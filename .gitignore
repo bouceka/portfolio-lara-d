@@ -7,3 +7,4 @@ dist-ssr
 *.local
 node_modules/*
 .yarn/cache/
+bitbucket-pipelines.yml
