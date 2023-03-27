@@ -15,7 +15,7 @@ export const Gallery = () => {
   return (
     <>
       <SuperSEO
-        title="Gallery | Lara Drummond Photography"
+        title="GALLERY | Lara Drummond Photography"
         description="A collection of Lara Drummond Photography's latest works in Product, Food, Editorial, and Fashion Photography."
       />
       <section className="page">
