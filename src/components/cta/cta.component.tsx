@@ -17,7 +17,7 @@ export const CTA = ({ styleType, heading, cta }: Props) => {
         <Action
           as="link"
           styleType="cta"
-          className={styleType === 'secondary' ? 'primary' : 'secondary'}
+          className={styleType === 'accent-2' ? 'secondary' : 'primary'}
           to="/contact-me"
         >
           {cta} <ArrowSVG />
