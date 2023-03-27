@@ -1,5 +1,6 @@
 // @flow
 import { useEffect, useState } from 'react';
+import { SuperSEO } from 'react-super-seo';
 
 import { AboutMe } from '../components/about-me/about-me.component';
 import { CTA } from '../components/cta/cta.component';
@@ -22,6 +23,10 @@ export const Homepage = () => {
   }, []);
   return (
     <>
+      <SuperSEO
+        title="Lara Drummond Photography"
+        description="Lara Drummond Photography offers exceptional Product, Food, Editorial, and Fashion Photography on Vancouver Island, BC."
+      />
       <Navbar styleType={isHeroHeight ? 'black' : 'white'} />
       <Hero />
       <Marquee color="secondary" />
