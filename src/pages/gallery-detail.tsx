@@ -8,7 +8,7 @@ import { CTA } from '../components/cta/cta.component';
 import { GalleryFeature } from '../components/gallery-feature/gallery-feature.component';
 import { Marquee } from '../components/marquee/marguee.component';
 import { Title } from '../components/title/title.component';
-import { FASHION_DATA_FLEE, FASHION_DATA_WANDERERS } from '../data/gallery-data';
+import { FASHION_DATA_GALLERY } from '../data/gallery-data';
 import { Services } from '../types/service';
 
 const services: Services[] = ['product', 'fashion', 'food', 'editorial'];
@@ -27,14 +27,16 @@ export const GalleryDetail = () => {
   return (
     <div className="page">
       <div className="row">
-        <Title title="FASHION PORTFOLIO" />
+        <Title title={`${galleryType?.toUpperCase()} GALLERY`} />
       </div>
-      <GalleryFeature
-        imageList={FASHION_DATA_WANDERERS}
-        year="2023"
-        title="THE WANDERERS"
-      />
-      <GalleryFeature imageList={FASHION_DATA_FLEE} year="2022" title="FLEE & FLY co." />
+      {FASHION_DATA_GALLERY[galleryType || 'editorial'].map((imageData, index) => (
+        <GalleryFeature
+          key={index}
+          imageList={imageData.imageData}
+          year={imageData.year}
+          title={imageData.title}
+        />
+      ))}
       <div className="gallery-cta">
         <Action as="link" to="/gallery" styleType="primary">
           back to gallery
