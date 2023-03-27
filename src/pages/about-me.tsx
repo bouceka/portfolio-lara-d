@@ -35,17 +35,15 @@ export const AboutMe = () => {
               </p>
 
               <p>
-                {' '}
                 Sourcing high-quality professional photos can be overwhelming, so
                 I&apos;’m here to make the photo shoot process as smooth and seamless as
                 possible. I can connect you with all the assets and collaborators you
                 need, such as stylists, makeup artists, set designers, digital marketers,
                 and more. All you need to do is meet me for an incredible shoot day, and
-                show off your incredible new photos!{' '}
+                show off your incredible new photos!
               </p>
 
               <p>
-                {' '}
                 When booking a photography session with me, I guarantee your business will
                 receive hard-hitting visuals that hit the mark, every time.
               </p>
