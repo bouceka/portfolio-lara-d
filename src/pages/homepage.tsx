@@ -1,6 +1,7 @@
 // @flow
 import { AboutMe } from '../components/about-me/about-me.component';
 import { CTA } from '../components/cta/cta.component';
+import { FeaturedIn } from '../components/featured-in/featured-in.component';
 import { Hero } from '../components/hero/hero.component';
 import { ImageSlider } from '../components/image-slider/image-slider.component';
 import { Marquee } from '../components/marquee/marguee.component';
@@ -20,6 +21,7 @@ export const Homepage = () => {
       <AboutMe />
       <ImageSlider />
       <RecentProjects />
+      <FeaturedIn />
       <Testimonials />
     </div>
   );
