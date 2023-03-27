@@ -1,5 +1,4 @@
 // @flow
-import './cta.styles.scss';
 
 import * as React from 'react';
 
