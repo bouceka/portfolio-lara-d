@@ -4,6 +4,11 @@ import './featured-in.styles.scss';
 
 import * as React from 'react';
 
+import BoulevardLogo from '../../assets/images/boulevard-logo.png';
+import CvCollectiveLogo from '../../assets/images/cv-collective-logo.png';
+import EdibleVancouverLogo from '../../assets/images/edible-vancouver-island-logo.png';
+import TrioLogo from '../../assets/images/trio-logo.png';
+import YamLogo from '../../assets/images/yam-logo.png';
 import { Title } from '../title/title.component';
 
 export default function FeaturedIn() {
@@ -11,11 +16,21 @@ export default function FeaturedIn() {
     <section className="featured-section row">
       <Title title="FEATURED IN:" />
       <div className="featured-logos-container">
-        <div className="featured-logo">test1</div>
-        <div className="featured-logo">test2</div>
-        <div className="featured-logo">test3</div>
-        <div className="featured-logo">test4</div>
-        <div className="featured-logo">test5</div>
+        <div className="featured-logo">
+          <img src={TrioLogo} alt="Trio Magazine Logo" />
+        </div>
+        <div className="featured-logo">
+          <img src={YamLogo} alt="Yam Magazine Logo" />
+        </div>
+        <div className="featured-logo">
+          <img src={CvCollectiveLogo} alt="CV Collective Logo" />
+        </div>
+        <div className="featured-logo">
+          <img src={BoulevardLogo} alt="Boulevard Magazine Logo" />
+        </div>
+        <div className="featured-logo">
+          <img src={EdibleVancouverLogo} alt="Edible Vancouver Island Logo" />
+        </div>
       </div>
     </section>
   );
