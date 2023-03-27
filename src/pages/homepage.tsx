@@ -21,8 +21,8 @@ export const Homepage = () => {
       <AboutMe />
       <ImageSlider />
       <RecentProjects />
-      <FeaturedIn />
       <Testimonials />
+      <FeaturedIn />
     </div>
   );
 };
