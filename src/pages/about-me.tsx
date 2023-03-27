@@ -10,7 +10,7 @@ import { Title } from '../components/title/title.component';
 export const AboutMe = () => {
   return (
     <>
-    <SuperSEO
+      <SuperSEO
         title="ABOUT | Lara Drummond Photography"
         description="Learn more about Lara, the photographer behind Lara Drummond Photography, and why she is the best fit for your professional photography needs."
       />
