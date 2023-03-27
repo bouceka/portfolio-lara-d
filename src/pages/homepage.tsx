@@ -6,6 +6,7 @@ import { Hero } from '../components/hero/hero.component';
 import { ImageSlider } from '../components/image-slider/image-slider.component';
 import { Marquee } from '../components/marquee/marguee.component';
 import { RecentProjects } from '../components/recent-projects/recent-projects.component';
+import Testimonials from '../components/testimonials/testimonials.component';
 
 export const Homepage = () => {
   return (
@@ -21,6 +22,7 @@ export const Homepage = () => {
       <ImageSlider />
       <RecentProjects />
       <FeaturedIn />
+      <Testimonials />
     </div>
   );
 };
