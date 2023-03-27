@@ -11,7 +11,7 @@ import { Title } from '../components/title/title.component';
 export const Gallery = () => {
   return (
     <div>
-			<Title title='Portfolio'  />
+      <Title title="Portfolio" />
       <div className="service-card-container">
         <ServiceCard serviceLabel="PRODUCT" color="secondary" image={ProductImage} />
         <ServiceCard serviceLabel="FOOD" color="accent-1" image={FoodImage} />
