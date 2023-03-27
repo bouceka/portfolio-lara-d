@@ -1,0 +1,38 @@
+@use '../../styles/base' as *;
+@use '../../styles/abstracts' as *;
+
+.section-bio {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    & .bio-container {
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: red;
+        align-self: flex-start;
+
+        & .bio-text {
+            display: flex;
+            background-color: blue;
+            align-self: flex-start;
+        }
+
+        & .bio-signature {
+            display: flex;
+            align-self: flex-end;
+            background-color: green;
+        }
+    }
+
+    &.bio-image {
+        display: flex;
+        flex: 1;
+
+    }
+}
