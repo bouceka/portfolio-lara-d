@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 
+import { CTA } from '../components/cta/cta.component';
 import { Marquee } from '../components/marquee/marguee.component';
 import { Title } from '../components/title/title.component';
 
@@ -63,6 +64,11 @@ export const AboutMe = () => {
       </div>
 
       <Marquee color="accent-1" />
+      <CTA
+        styleType="secondary"
+        heading="Let's create photography magic together."
+        cta="Get started"
+      />
     </div>
   );
 };
