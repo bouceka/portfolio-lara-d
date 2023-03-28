@@ -31,7 +31,7 @@ export const ImageCarousel = ({ imageList }: Props) => {
       ) : null}
       <div className={`slider ${isCarouselLeft ? 'right' : 'left'}`}>
         {imageList.map((image, index) => (
-          <img src={image.imgURL} alt={image.alt} key={index} />
+          <img loading="lazy" src={image.imgURL} alt={image.alt} key={index} />
         ))}
       </div>
     </div>
