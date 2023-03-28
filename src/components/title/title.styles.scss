@@ -8,7 +8,24 @@
 }
 
 .title-divider {
-  border-bottom: 1px solid var(--text-black-primary);
+	position: relative;
+	&::before {
+		position: absolute;
+		content: '';
+		bottom: 0;
+		left: 0;
+		width: 100rem;
+		border-bottom: 1px solid var(--text-black-primary);
+		transform: translateX(calc(100rem));
+	}
+	&::after {
+		position: absolute;
+		content: '';
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		border-bottom: 1px solid var(--text-black-primary);
+	}
 }
 
 .subtitle {

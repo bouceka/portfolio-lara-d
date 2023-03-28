@@ -1,22 +1,27 @@
-.image-slider {
-  display: flex;
-  gap: 2rem;
-  padding: 12.4rem;
-  & img {
-    height: 25.6rem;
-    width: 27.2rem;
-    animation: 30s linear marquee infinite;
+.image {
+  &-list {
+    gap: 2rem;
+    padding: 12.4rem;
+    display: inline-block;
+    white-space: nowrap;
+    animation: 30s linear image-slider infinite;
+
+    & img {
+      height: 25.6rem;
+      width: 27.2rem;
+      margin: 0 1rem;
+    }
   }
 }
 
 @keyframes image-slider {
   0% {
-    transform: translateX(0);
+    transform: translateX(-10vw);
   }
   50% {
-    transform: translateX(-100vw);
+    transform: translateX(calc(110vw - 100%));
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(-10vw);
   }
 }

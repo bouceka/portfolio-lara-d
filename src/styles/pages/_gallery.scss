@@ -1,7 +1,7 @@
 @use '../../styles/base' as *;
 @use '../../styles/abstracts' as *;
 
-.service-card {
+.service-cards {
   &-container {
     display: flex;
     flex-wrap: nowrap;

@@ -1,0 +1,51 @@
+@use '../../styles/base' as *;
+@use '../../styles/abstracts' as *;
+
+.section-bio {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    justify-self: start;
+    gap: 4rem;
+    margin-bottom: 9.6rem;
+
+    & .bio-container {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+
+
+        & .bio-text {
+            display: block;
+            margin: 0;
+            @extend .p--large--medium;
+
+            & p {
+                margin-bottom: 2rem;
+            }
+        }
+
+        & .bio-signature {
+            display: block;
+            align-self: flex-end;
+            margin-top: 6rem;
+        }
+    }
+
+    & .bio-image {
+        display: flex;
+        flex: 1;
+        & img {
+            display: block;
+            object-fit: cover;
+            width: 60rem;
+        }
+
+    }
+}

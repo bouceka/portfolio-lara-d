@@ -3,9 +3,11 @@
   padding: 1.2rem 1.6rem;
   overflow-x: hidden;
   white-space: nowrap;
+	border-bottom: 1px solid var(--text-black-primary);
+	border-top: 1px solid var(--text-black-primary);
   & span {
     animation: 30s linear marquee infinite;
-	display: block;
+    display: block;
   }
 }
 

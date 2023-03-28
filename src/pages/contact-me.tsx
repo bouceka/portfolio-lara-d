@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import { SuperSEO } from 'react-super-seo';
 
 import { ReactComponent as PointerSVG } from '../assets/Pointer.svg';
 import { Action } from '../components/action/action.component';
@@ -12,6 +13,10 @@ import { Title } from '../components/title/title.component';
 export const ContactMe = () => {
   return (
     <>
+      <SuperSEO
+        title="CONTACT | Lara Drummond Photography"
+        description="Get in touch with Lara to discuss your next project with Lara Drummond Photography."
+      />
       <div className="page row">
         <Title
           title="Let’s Work Together"
