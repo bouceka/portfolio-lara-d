@@ -235,63 +235,48 @@ const FOOD_DATA_RED_LOTUS: GalleryData = {
   ],
 };
 const PRODUCT_DATA_DILLE_CAMILLE: GalleryData = {
-  year: '2022',
-  title: 'Red Lotus Food',
+  year: '2023',
+  title: 'Dille & Camille',
   imageData: [
     {
       imgURL:
-        'https://res.cloudinary.com/dufli3jum/image/upload/v1679542251/LaraPorfolio/Food/small/CB-LD-Food12_evjf94.jpg',
-      alt: 'Sweet Tooth Donuts',
+        'https://res.cloudinary.com/dufli3jum/image/upload/v1679891550/LaraPorfolio/Product/Dille_Camille/LaraDrummondPhotography-Product-DCamille-1_k3jqja.webp',
+      alt: 'Product Photography of Dille & Camille by Lara Drummond Photography',
     },
     {
       imgURL:
-        'https://res.cloudinary.com/dufli3jum/image/upload/v1679542251/LaraPorfolio/Food/small/CB-LD-Food10_lg0kqt.jpg',
-      alt: 'Sweet Tooth Donuts',
+        'https://res.cloudinary.com/dufli3jum/image/upload/v1679891549/LaraPorfolio/Product/Dille_Camille/LaraDrummondPhotography-Product-DCamille-2_m3ei70.webp',
+      alt: 'Product Photography of Dille & Camille by Lara Drummond Photography',
     },
     {
       imgURL:
-        'https://res.cloudinary.com/dufli3jum/image/upload/v1679542251/LaraPorfolio/Food/small/CB-LD-Food11_z2uecz.jpg',
-      alt: 'Sweet Tooth Donuts',
+        'https://res.cloudinary.com/dufli3jum/image/upload/v1679891549/LaraPorfolio/Product/Dille_Camille/LaraDrummondPhotography-Product-DCamille-3_cu94pi.webp',
+      alt: 'Product Photography of Dille & Camille by Lara Drummond Photography',
     },
     {
       imgURL:
-        'https://res.cloudinary.com/dufli3jum/image/upload/v1679542251/LaraPorfolio/Food/small/CB-LD-Food8_jr9dwx.jpg',
-      alt: 'Fashion FLEE & FLY Co.',
+        'https://res.cloudinary.com/dufli3jum/image/upload/v1679891549/LaraPorfolio/Product/Dille_Camille/LaraDrummondPhotography-Product-DCamille-8_eev2pl.webp',
+      alt: 'Product Photography of Dille & Camille by Lara Drummond Photography',
     },
     {
       imgURL:
-        'https://res.cloudinary.com/dufli3jum/image/upload/v1679542251/LaraPorfolio/Food/small/CB-LD-Food6_dkklwn.jpg',
-      alt: 'Fashion FLEE & FLY Co.',
+        'https://res.cloudinary.com/dufli3jum/image/upload/v1679891549/LaraPorfolio/Product/Dille_Camille/LaraDrummondPhotography-Product-DCamille-5_p0upj0.webp',
+      alt: 'Product Photography of Dille & Camille by Lara Drummond Photography',
     },
     {
       imgURL:
-        'https://res.cloudinary.com/dufli3jum/image/upload/v1679542251/LaraPorfolio/Food/small/CB-LD-Food7_jpmixv.jpg',
-      alt: 'Fashion FLEE & FLY Co.',
+        'https://res.cloudinary.com/dufli3jum/image/upload/v1679891549/LaraPorfolio/Product/Dille_Camille/LaraDrummondPhotography-Product-DCamille-4_vnet7h.webp',
+      alt: 'Product Photography of Dille & Camille by Lara Drummond Photography',
     },
     {
       imgURL:
-        'https://res.cloudinary.com/dufli3jum/image/upload/v1679542251/LaraPorfolio/Food/small/CB-LD-Food9_edpled.jpg',
-      alt: 'Fashion FLEE & FLY Co.',
+        'https://res.cloudinary.com/dufli3jum/image/upload/v1679891549/LaraPorfolio/Product/Dille_Camille/LaraDrummondPhotography-Product-DCamille-7_cf14pt.webp',
+      alt: 'Product Photography of Dille & Camille by Lara Drummond Photography',
     },
     {
       imgURL:
-        'https://res.cloudinary.com/dufli3jum/image/upload/v1679542250/LaraPorfolio/Food/small/CB-LD-Food2_rsmufj.jpg',
-      alt: 'Fashion FLEE & FLY Co.',
-    },
-    {
-      imgURL:
-        'https://res.cloudinary.com/dufli3jum/image/upload/v1679542250/LaraPorfolio/Food/small/CB-LD-Food1_t9esdp.jpg',
-      alt: 'Fashion FLEE & FLY Co.',
-    },
-    {
-      imgURL:
-        'https://res.cloudinary.com/dufli3jum/image/upload/v1679542250/LaraPorfolio/Food/small/CB-LD-Food5_qpygbd.jpg',
-      alt: 'Fashion FLEE & FLY Co.',
-    },
-    {
-      imgURL:
-        'https://res.cloudinary.com/dufli3jum/image/upload/v1679542250/LaraPorfolio/Food/small/CB-LD-Food1_cx4wdn.webp',
-      alt: 'Fashion FLEE & FLY Co.',
+        'https://res.cloudinary.com/dufli3jum/image/upload/v1679891548/LaraPorfolio/Product/Dille_Camille/LaraDrummondPhotography-Product-DCamille-6_pmmtis.webp',
+      alt: 'Product Photography of Dille & Camille by Lara Drummond Photography',
     },
   ],
 };
