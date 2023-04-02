@@ -11,7 +11,7 @@ const MARQUE_DATA =
 export const Marquee = ({ color }: Props) => {
   return (
     <div style={{ backgroundColor: `var(--color-${color})` }} className="marquee">
-      <span>{MARQUE_DATA}</span>
+      <span>{MARQUE_DATA.toUpperCase()}</span>
     </div>
   );
 };

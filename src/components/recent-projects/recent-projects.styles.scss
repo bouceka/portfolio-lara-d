@@ -69,6 +69,7 @@
     }
     & img {
       height: 60rem;
+			width: 60rem;
       flex: 0 0 60%;
       object-fit: cover;
       border-left: 1px solid var(--text-black-primary);

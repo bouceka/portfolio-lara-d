@@ -10,6 +10,7 @@ import { ContactMe } from './pages/contact-me';
 import { Gallery } from './pages/gallery';
 import { GalleryDetail } from './pages/gallery-detail';
 import { Homepage } from './pages/homepage';
+import ScrollToTop from './helper/scroll-top';
 
 const router = createBrowserRouter([
   {

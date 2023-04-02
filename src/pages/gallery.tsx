@@ -2,10 +2,6 @@
 import * as React from 'react';
 import { SuperSEO } from 'react-super-seo';
 
-import EditorialImage from '../assets/images/CB-LaraDrummond-Moodboard-25.jpg';
-import FashionImage from '../assets/images/CB-LD-Fashion-1-8.jpg';
-import FoodImage from '../assets/images/CB-LD-Food4.jpg';
-import ProductImage from '../assets/images/CB-LD-Product5.jpg';
 import { CTA } from '../components/cta/cta.component';
 import { Marquee } from '../components/marquee/marguee.component';
 import { ServiceCard } from '../components/services-card/services-card.component';
@@ -29,13 +25,17 @@ export const Gallery = () => {
               <ServiceCard
                 serviceLabel="PRODUCT"
                 color="secondary"
-                image={ProductImage}
+                image={
+                  'https://res.cloudinary.com/dufli3jum/image/upload/v1679542322/LaraPorfolio/Product/medium/CB-LD-Product5_nrt63w.jpg'
+                }
                 link="product"
               />
               <ServiceCard
                 serviceLabel="FOOD"
                 color="accent-1"
-                image={FoodImage}
+                image={
+                  'https://res.cloudinary.com/dufli3jum/image/upload/v1679542250/LaraPorfolio/Food/small/CB-LD-Food4_o1madu.jpg'
+                }
                 link="food"
               />
             </div>
@@ -43,13 +43,17 @@ export const Gallery = () => {
               <ServiceCard
                 serviceLabel="EDITORIAL"
                 color="accent-1"
-                image={EditorialImage}
+                image={
+                  'https://res.cloudinary.com/dufli3jum/image/upload/v1679542009/LaraPorfolio/Editorial/horses/medium/CB-LaraDrummond-Moodboard-25_qptc0q.webp'
+                }
                 link="editorial"
               />
               <ServiceCard
                 serviceLabel="FASHION"
                 color="primary"
-                image={FashionImage}
+                image={
+                  'https://res.cloudinary.com/dufli3jum/image/upload/v1679542197/LaraPorfolio/Fashion/travellers/medium/CB-LD-Fashion-1-8_pp1cze.webp'
+                }
                 link="fashion"
               />
             </div>
